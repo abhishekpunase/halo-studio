@@ -1,0 +1,754 @@
+@font-face {
+    font-family:light ;
+    src: url(./font.ttf);
+}
+@font-face {
+    font-family: italic;
+    src: url(./font-italic.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* #main{
+    width: 100%;
+} */
+*::selection{
+    color: white;
+    background-color: #111;
+}
+#circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    color: slamon;
+    transition: all linear 0.14s;
+    position: absolute;
+    z-index: 9999999;
+    background-color: #fff;
+}
+#page1{
+    width: 100vw;
+    height: 130vh;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+#page1 nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#page1 nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: gilroy;
+    color: #999;
+}
+#page1 nav a:hover{
+    color: white;
+}
+
+
+#page1 h1{
+    font-size: 360px;
+    color: white;
+    font-weight: 100;
+    font-family: light;
+    position: absolute;
+    left: 5%;
+    top: 0.4%;
+    z-index: 99;
+    scale: 0;
+}
+#page1 h2{
+    color: white;
+    font-size: 360px;
+    font-weight: 100;
+    font-family: italic;
+    position: absolute;
+    left: 28%;
+    top: 6%;
+    z-index: 99;
+    scale: 0;
+}
+#page1 #img1{
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/07/Mugler_SF_07-scaled.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 700px;
+    height: 750px;
+    position: absolute;
+    right: 0;
+    top: 2%;
+}
+#page1 #img2{
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/07/2110050000001600082.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 12%;
+    top: 6%;
+}
+#page1 #logo{
+    width: 80px;
+    height: 400px;
+    /* background-color: red; */
+    position: absolute;
+    right: 0px;
+    top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page1 #logo >img{
+    transform: rotate(-90deg);
+    width: 250%;
+}
+#page2{
+    width: 100vw;
+    height: 150vh;
+    background-color: #000;
+    position: relative;
+}
+#page2 #text h1{
+    color: #fff;
+    width: 55%;
+    position: absolute;
+    font-family: light;
+    font-size: 35px;
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    line-height: 1.5;
+    z-index: 99;
+}
+
+#page2 #small-img1{
+    width: 10%;
+    position: absolute;
+    left: 58%;
+    top: 15%; 
+    
+
+}
+#page2 #small-img2{
+    width: 10%;
+    position: absolute;
+    left: 42%;
+    top: 20%; 
+
+
+}
+#page2 #text h2{
+    color: #fff;
+    width: 55%;
+    position: absolute;
+    font-family: light;
+    font-size: 35px;
+    position: absolute;
+    top: 16%;
+    left: 67%;
+    line-height: 1.5;
+    z-index: 99;
+}
+#page2 #text h3{
+    color: #fff;
+    width: 55%;
+    position: absolute;
+    font-family: light;
+    font-size: 35px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    line-height: 1.5;
+    z-index: 99;
+}
+#page2 #text h4{
+    color: #fff;
+    width: 55%;
+    position: absolute;
+    font-family: light;
+    font-size: 35px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    line-height: 1.5;
+    z-index: 99;
+}
+#page2 #text h5{
+    color: #fff;
+    width: 55%;
+    position: absolute;
+    font-family: light;
+    font-size: 35px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    line-height: 1.5;
+    z-index: 99;
+}
+#page2 #big-circle{
+    width:800px;
+    height: 800px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    transform: all linear 0.01s;
+}
+#paage2 #big-circle>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+#page3 h1{
+    color:#fff;
+    font-family: italic;
+    font-size: 110px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+#page3 span{
+    font-family: light;
+}
+#page3 h2{
+    color:#fff;
+    font-family: italic;
+    font-size: 110px;
+    margin-left: 30px;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+
+}
+#page3 #box1{
+    width: 300px;
+    height: 150px;
+    /* background-color: red; */
+    border-radius: 100px;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+#page3 #box2{
+    width: 300px;
+    height: 150px;
+    background-color: red;
+    border-radius: 100px;
+    position: absolute;
+    top: 58%;
+    left: 13%;
+    overflow: hidden;
+}
+#page3 #box1>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page3 #box2>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page4{
+    width: 100vw;
+    height: 150vh;
+    background-color: #000;
+    position: relative;
+}
+#page4 h2{
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    font-family: light;
+}
+#page4 h1{
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: light;
+    width: 50%;
+    text-align: center;
+
+}
+#bdiv{
+    width: 100vw;
+    height: 110vh;
+    /* background-color: rgba(255, 0, 0, 0.388); */
+    position: absolute;
+    top: 25%;
+    /* overflow: hidden; */
+}
+#bdiv #ldiv{
+    position: absolute;
+    left: 8%;
+    top: 25%;
+    width: 350px;
+    height: 450px;
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/08/Gucci-Aria.jpg);
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+    
+}
+#ldiv >img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.7;
+}
+#ldiv>h1{
+    position: absolute;
+    top: -3%;
+    left: 25%;
+    font-size: 75px;
+    font-family: light;
+    font-weight: 200;
+}
+#ldiv >h2{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    font-size: 75px;
+    font-family: italic;
+    font-weight: 200;
+}
+#ldiv>h6{
+    position: absolute;
+    left: -50%;
+    top: 80%;
+    font-size: 12px;
+    color: white;
+    font-family: monospace;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transform: rotate(-90deg)
+}
+
+#bdiv #mdiv{
+    position: absolute;
+    left: 36%;
+    top: 14%;
+    width: 500px;
+    height: 650px;
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/07/Z1935_SFX_CINDY_09_124_v2__WEB-1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+    z-index: 99;
+}
+#mdiv >img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.6;
+}
+#mdiv>h1{
+    position: absolute;
+    top: -3%;
+    left: 40%;
+    font-size: 130px;
+    font-family: light;
+    font-weight: 200;
+}
+#mdiv >h2{
+    position: absolute;
+    top: 87%;
+    left: 25%;
+    font-size: 130px;
+    font-family: italic;
+    font-weight: 200;
+    opacity: 1;
+}
+#mdiv>h6{
+    position: absolute;
+    left: -27%;
+    top: 80%;
+    font-size: 12px;
+    color: white;
+    font-family: monospace;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transform: rotate(-90deg)
+}
+#bdiv #rdiv{
+    position: absolute;
+    right: 8%;
+    top: 25%;
+    width: 350px;
+    height: 450px;
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/07/BURBERRY_SS22_CONSTELLATIONS_RGB_CROPPED_04-2.jpg);
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+}
+#rdiv >img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.9;
+}
+#rdiv>h1{
+    position: absolute;
+    top: -3%;
+    left: 25%;
+    font-size: 75px;
+    font-family: light;
+    font-weight: 200;
+}
+#rdiv >h2{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    font-size: 75px;
+    font-family: italic;
+    font-weight: 200;
+}
+#rdiv>h6{
+    position: absolute;
+    left: -53%;
+    top: 80%;
+    font-size: 12px;
+    color: white;
+    font-family: monospace;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transform: rotate(-90deg)
+}
+#page5{
+    width: 100vw;
+    height: 129vh;
+    z-index: 0;
+    background-color: black;
+    /* background-color: transparent; */
+}
+#page5 h1{
+    color: white;
+    font-family: light ;
+    font-weight: 200;
+    font-size: 300px;
+    z-index: 999;
+    position: relative;
+    left: 0%;
+    line-height: 0.9;
+    text-align: center;
+
+}
+#page5 h1 span{
+    font-family: italic;
+}
+#page5 p{
+    color: white;
+    font-family: light ;
+    font-weight: 200;
+    font-size: 20px;
+    z-index: 999;
+    position: absolute;
+    left: 30%;
+    line-height: 0.9;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 40%;
+}
+#page5 h4{
+    color: white;
+    font-family: light ;
+    font-weight: 200;
+    font-size: 20px;
+    z-index: 999;
+    position: relative;
+    left: 0%;
+    top: 12%;
+    line-height: 0.9;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#page5 hr{
+    color: white;
+    width: 170px;
+    height: 2px;
+    background-color: white;
+    font-family: light ;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 999;
+    position: relative;
+    left: 45%;
+    top: 5%;
+    line-height: 0.9;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#page5 img{
+    font-family: light ;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 999;
+    position: relative;
+    left: 45%;
+    top: 5%;
+    width: 10%;
+    line-height: 0.9;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#page6{
+    width: 100vw;
+    height: 150vh;
+    background-color: black;
+    position: relative;
+
+}
+#main-div{
+    /* width: 40vw;
+    height: 100vh; */
+    /* background-color: red; */
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    padding: 40vw 30vw 20vh 20vh;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/07/BURBERRY_SS22_CONSTELLATIONS_RGB_CROPPED_04-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#main-div h1{
+    font-size: 220px;
+    position: absolute;
+    color: #fff;
+    font-family: light;
+    top: 30%;
+    left: -10%;
+    font-weight: 200;
+}
+#main-div h2{
+    font-size: 220px;
+    position: absolute;
+    color: #fff;
+    font-family: light;
+    top: 50%;
+    left: 30%;
+    font-weight: 200;
+    font-family: italic;
+}
+#text-div{
+    width: 40vw;
+    height: 30vh;
+    /* background-color: red; */
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#text-div h6{
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    font-family: gilroy;
+}
+#text-div h5{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: light;
+}
+#text-div hr{
+    width: 25%;
+    height: 2px;
+    color: #fff;
+}
+#text-div img{
+    width: 30%;
+    margin-top: 50px;
+}
+#page7{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#up-div{
+    width: 95%;
+    height: 88%;
+    position: relative;
+    top: 5%;
+    /* background-color: red; */
+}
+#page7 #up-div nav{
+    width: 100%;
+    height: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+} 
+#up-div nav h1{
+    color: #fff;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#up-div nav a{
+    color: #fff;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+#up-div h1{
+    color: #fff;
+    font-size:85px;
+    font-family: gilroy light;
+}
+#up-div h1 span{
+    color: gray;
+}
+#up-div #mid{
+    width: 100%;
+    height: 60px;
+    /* background-color: salmon; */
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: gilroy light;
+
+}
+#mid #lmid h2{
+    color: gray;
+}
+#mid #lmid hr{
+    color: gray;
+}
+#mid #rmid h3{
+    color: white;
+    font-size: 20px;
+}
+#mid #rmid hr{
+    color: #fff;
+}
+#btm-div{
+    width: 100%;
+    height: 36%;
+    /* background-color: blue; */
+    position: relative;
+    bottom: 0%;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+}
+#btm-div #div1{
+    width: 30%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+}
+#btm-div #div1 h1{
+    font-size: 25px;
+}
+#btm-div #div2{
+   width: 20%;
+   height: 100%;
+   /* background-color: red; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   color: #fff;
+   line-height: 2;
+   font-size: 15px;
+   /* text-align: start; */
+   font-family: gilroy;
+
+}  
+#btm-div #div2 h4{
+    font-size: 14px;
+}
+#btm-div #div2 h5{
+    font-size: 13px;
+}
+#div4{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(169, 86, 86); */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 30px;
+}
+#div4 img{
+    width: 40%;
+}
+
+
+
+#btm-div #div3{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(255, 0, 238); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    line-height: 2;
+    font-size: 15px;
+}
+#btm-div #div3 >h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+#btm-div #div3 p{
+    width: 50%;
+    line-height: 1.2;
+    font-family: gilroy;
+}
+#page7 #btm-nav{
+    width:95%;
+    height: 5%;
+    /* background-color: white; */
+    position: relative;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+
+}
